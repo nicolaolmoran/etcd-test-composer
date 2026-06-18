@@ -51,3 +51,5 @@ services:
     image: 'etcd-client:latest'
     container_name: client
     entrypoint: ['/entrypoint.py']
+    environment: 
+      ANTITHESIS_SDK_LOCAL_OUTPUT: "/tmp/antithesis_output.json" 

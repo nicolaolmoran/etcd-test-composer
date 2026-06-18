@@ -49,6 +49,10 @@ COPY ./entrypoint/entrypoint.py /entrypoint.py
 
 # Copying python executable into Test Composer directory
 COPY ./python-generate-traffic/parallel_driver_generate_traffic.py /opt/antithesis/test/v1/main/parallel_driver_generate_traffic.py
+COPY ./python-leader-churn/parallel_driver_leader_churn.py /opt/antithesis/test/v1/main/parallel_driver_leader_churn.py
+COPY ./python-check-revision/anytime_check_revision.py /opt/antithesis/test/v1/main/anytime_check_revision.py
+COPY ./python-check-convergence/eventually_check_convergence.py /opt/antithesis/test/v1/main/eventually_check_convergence.py
+
 
 # Copying additional resources into a resources folder
 COPY ./python-generate-traffic/resources/helper.py /opt/antithesis/resources/helper.py
